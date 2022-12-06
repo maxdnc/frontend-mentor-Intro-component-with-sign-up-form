@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="grid-contener">
+      <section class="section-main">
+        <h1>Learn to code by watching others</h1>
+        <p class="experience">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <div class="helper-grid-right">
+        <section>
+          <a href="#" class="big-button"
+            ><strong>Try it free 7 days</strong> then $20/mo. thereafter
+          </a>
+        </section>
+        <section>
+          <form method="get" action="" class="form" id="form">
+            <div class="placeholder-form">
+              <div class="wrapper-svg" id="inputfirstname">
+                <input
+                  type="text"
+                  name="First-Name"
+                  id="First-Name"
+                  class="form-input"
+                  placeholder="First Name"
+                />
+                <img
+                  src="images/icon-error.svg"
+                  alt="Error icon form"
+                  class="error-icon"
+                />
+                <small class="error-msg">First Name cannot be empty</small>
+              </div>
+            </div>
+
+            <div class="placeholder-form">
+              <div class="wrapper-svg" id="inputlastname">
+                <input
+                  type="text"
+                  name="Last-Name"
+                  id="Last-Name"
+                  class="form-input"
+                  placeholder="Last Name"
+                />
+                <img
+                  src="images/icon-error.svg"
+                  alt="Error icon form"
+                  class="error-icon"
+                />
+                <small class="error-msg">Last Name cannot be empty</small>
+              </div>
+            </div>
+
+            <div class="placeholder-form">
+              <div class="wrapper-svg" id="inputemail">
+                <input
+                  type="email"
+                  name="email"
+                  id="Email"
+                  class="form-input"
+                  placeholder="Email Adresse"
+                />
+                <img
+                  src="images/icon-error.svg"
+                  alt="Error icon form"
+                  class="error-icon"
+                />
+                <small class="error-msg" id="mailerrormessage"
+                  >Email cannot be empty</small
+                >
+              </div>
+            </div>
+            <div class="placeholder-form">
+              <div class="wrapper-svg" id="inputpassword">
+                <input
+                  type="password"
+                  name="Password"
+                  id="Password"
+                  class="form-input"
+                  placeholder="Password"
+                />
+                <img
+                  src="images/icon-error.svg"
+                  alt="Error icon form"
+                  class="error-icon"
+                />
+                <small class="error-msg">Password cannot be empty</small>
+              </div>
+            </div>
+
+            <button type="submit" class="claim-btn">
+              claim your free trial
+            </button>
+
+            <p class="downtextform">
+              By clicking the button, you are agreeing to our
+              <a href="#" class="terms-link-form">Terms and Services</a>
+            </p>
+          </form>
+        </section>
+      </div>
+    </div>
+    <script src="sandbox.js"></script>
+  </body>
+</html>
